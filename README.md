@@ -1,7 +1,7 @@
 # java-stream-example
 
 
-Smaple FileRead
+File Reading Smaple 
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -23,3 +23,31 @@ public class FileExample {
         br.close();
     }
 }
+
+
+
+File Writing Sample
+
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriteExz {
+
+    public static void main(String[] args) throws IOException {
+
+        String inp = "test text";
+
+        FileWriter fw = new FileWriter("/home/user/Desktop/fileTest.txt");
+
+        BufferedWriter bf = new BufferedWriter(fw);
+
+        bf.write("abcde");
+
+        bf.close();
+
+
+    }
+}
+
